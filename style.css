@@ -1,0 +1,12 @@
+body {
+    font-family: monospace;
+}
+
+main.container-main {
+    max-width: 1280px;
+    margin: 60px auto;
+}
+
+.border {
+    border-radius: 20px;
+}
