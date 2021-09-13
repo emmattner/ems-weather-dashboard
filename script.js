@@ -115,3 +115,10 @@ const getForecasts = function (city) {
             });
         });
 };
+
+const displayForecasts = function(weather){
+    forecastContainerEl.textContent = ""
+    forecastHeader.textContent = "5-Day Forecast:";
+
+    
+}    
