@@ -24,3 +24,7 @@ const formSumbitHandler = function (event) {
     saveCity();
     pastCity(city);
 }
+
+const saveCity = function(){
+    localStorage.setItem("cityArray", JSON.stringify(cityArray));
+};
