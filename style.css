@@ -146,3 +146,24 @@ h5.card-header.text-center {
     padding-top: 0px;
     font-size: 13px;
 }
+
+/* UV Index Colours */
+
+span.moderate {
+    background: #ebfbaa;
+    padding: 1px 11px;
+}
+
+span.severe {
+    background: #f99797;
+    padding: 1px 11px;
+}
+
+span.favorable {
+    background: #75ffb9;
+    padding: 1px 11px;
+}
+
+div#forecast-container {
+    margin-left: -10px;
+}
