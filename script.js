@@ -56,4 +56,8 @@ const displayWeather = function (weather, searchCity) {
     currentDate.textContent = moment(weather.dt.value).format("dddd, MMMM Do, YYYY");
     citySearchInputEl.appendChild(currentDate);
 
+    const temperatureEl = document.createElement("span");
+    temperatureEl.textContent = Math.round(weather.main.temp) + "°C";
+    temperatureEl.classList = "list-group-item current-temp"
+    currentWeatherEl.appendChild(temperatureEl);
 }    
