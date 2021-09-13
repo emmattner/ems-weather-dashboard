@@ -69,8 +69,19 @@ const displayWeather = function (weather, searchCity) {
     const humidityEl = document.createElement("span");
     humidityEl.textContent = "Humidity: " + weather.main.humidity + " %";
     humidityEl.classList = "list-group-item"
-    currentWeatherEl.appendChild(humidityEl);   
+    currentWeatherEl.appendChild(humidityEl);
     const lat = weather.coord.lat;
     const lon = weather.coord.lon;
-    getUvIndex(lat,lon)
+    getUvIndex(lat, lon)
+}
+
+const getUvIndex = function (lat, lon) {
+    const apiURL = `https://api.openweathermap.org/data/2.5/uvi?appid=${API_Key}&lat=${lat}&lon=${lon}`
+    fetch(apiURL)
+        .then(function (response) {
+            response.json().then(function (data) {
+                displayUvIndex(data)
+                console.log(data)
+            });
+        });
 }
