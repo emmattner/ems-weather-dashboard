@@ -35,3 +35,25 @@ form#search-container {
     background: #f9fafb;
     padding: 20px!important;
 }
+
+input#city-input {
+    margin-bottom: 10px;
+}
+
+#search-text {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: rgb(193, 245, 255);
+    background: -webkit-linear-gradient(53deg, rgba(193, 245, 255, 1) 0%, rgba(0, 215, 255, 1) 16%, rgba(0, 171, 255, 1) 58%, rgba(0, 60, 117, 1) 100%);
+    background: -o-linear-gradient(53deg, rgba(193, 245, 255, 1) 0%, rgba(0, 215, 255, 1) 16%, rgba(0, 171, 255, 1) 58%, rgba(0, 60, 117, 1) 100%);
+    background: linear-gradient(143deg, rgba(193, 245, 255, 1) 0%, rgba(0, 215, 255, 1) 16%, rgba(0, 171, 255, 1) 58%, rgba(0, 60, 117, 1) 100%);
+    ;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
