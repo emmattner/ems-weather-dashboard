@@ -116,9 +116,15 @@ const getForecasts = function (city) {
         });
 };
 
-const displayForecasts = function(weather){
+const displayForecasts = function (weather) {
     forecastContainerEl.textContent = ""
     forecastHeader.textContent = "5-Day Forecast:";
 
-    
+    const forecast = weather.list;
+    for (var i = 5; i < forecast.length; i = i + 8) {
+        const dailyForecast = forecast[i];
+        const forecastEl = document.createElement("div");
+        forecastEl.classList = "card bg-white text-black m-2";
+    }    
+
 }    
