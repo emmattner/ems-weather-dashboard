@@ -160,3 +160,6 @@ const pastCityHandler = function (event) {
         getForecasts(city);
     }
 }
+
+searchEl.addEventListener("submit", formSumbitHandler);
+cityHistoryEl.addEventListener("click", pastCityHandler);
