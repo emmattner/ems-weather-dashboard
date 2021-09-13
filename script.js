@@ -136,6 +136,10 @@ const displayForecasts = function (weather) {
         forecastTempEl.textContent = Math.round(dailyForecast.main.temp) + "°C";
         forecastEl.appendChild(forecastTempEl);
 
-
+        const forecastHumEl=document.createElement("span");
+        forecastHumEl.classList = "card-body text-center forecast-humdity";
+        forecastHumEl.textContent = dailyForecast.main.humidity + "  % Humidity";
+        forecastEl.appendChild(forecastHumEl);
+        forecastContainerEl.appendChild(forecastEl);
     }
 }    
