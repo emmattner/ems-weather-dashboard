@@ -57,3 +57,18 @@ input#city-input {
     color: white;
     font-weight: bold;
 }
+
+.btn-primary:hover {
+    background: rgb(0,171,255);
+    background: -webkit-linear-gradient(53deg, rgba(0,171,255,1) 0%, rgba(0,60,117,1) 94%);
+    background: -o-linear-gradient(53deg, rgba(0,171,255,1) 0%, rgba(0,60,117,1) 94%);
+    background: linear-gradient(143deg, rgba(0,171,255,1) 0%, rgba(0,60,117,1) 94%);;
+	}
+
+button.d-flex.btn-light.border.p-2:hover {
+    background: #eaeaea;
+	}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    box-shadow: 0 0 0 0rem rgb(0 104 255 / 50%);
+}
