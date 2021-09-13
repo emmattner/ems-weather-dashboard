@@ -152,3 +152,11 @@ const pastCity = function (pastCity) {
     pastCityEl.setAttribute("type", "submit");
     cityHistoryEl.prepend(pastCityEl);
 }
+
+const pastCityHandler = function (event) {
+    const city = event.target.getAttribute("data-city")
+    if (city) {
+        getCityWeather(city);
+        getForecasts(city);
+    }
+}
