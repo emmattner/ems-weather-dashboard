@@ -105,3 +105,13 @@ const displayUvIndex = function (index) {
     uvIndexEl.appendChild(uvIndexValue);
     currentWeatherEl.appendChild(uvIndexEl);
 }
+
+const getForecasts = function (city) {
+    const apiURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${API_Key}`
+    fetch(apiURL)
+        .then(function (response) {
+            response.json().then(function (data) {
+                displayForecasts(data);
+            });
+        });
+};
