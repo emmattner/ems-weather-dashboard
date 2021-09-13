@@ -94,3 +94,55 @@ h2#searched-city {
 .current-date {
     font-size: 16px;
 }
+
+.current-temp {
+    font-size: 60px;
+}
+
+.list-group-item {
+    padding-left: 0px;
+}
+
+.col-12.col-md-9 {
+    padding-left: 30px;
+}
+
+span#current-temp {
+    font-size: 70px;
+    margin-top: -15px;
+    background: none;
+    padding-bottom: 0px;
+}
+
+.list-group-item {
+    padding-top: 0px;
+}
+
+/* Five Day Forecast */
+
+h2#forecast-header {
+    margin-top: 30px;
+}
+
+.card.bg-primary.text-light.m-2 {
+    border-radius: 15px;
+}
+
+.card.bg-white.text-black.m-2 {
+    border-radius: 12px;
+}
+
+h5.card-header.text-center {
+    border-radius: 12px 12px 0px 0px;
+    font-size: 13px;
+    background: #f9fafb;
+}
+
+.forecast-temp {
+    font-size: 36px;
+}
+
+.forecast-humdity {
+    padding-top: 0px;
+    font-size: 13px;
+}
