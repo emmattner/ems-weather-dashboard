@@ -173,3 +173,39 @@ div#forecast-container {
 div#five-day-forecast, span.list-group-item, div#search-history, div#current-forecast, .list-group-item {
     border: none!important;
 }
+
+/* Responsive Adjustments */
+
+@media (max-width: 767px) {
+    main.container-main {
+        max-width: 1280px;
+        margin: -8px auto;
+    }
+    .row {
+        margin-right: 0px!important;
+    }
+    form#search-container {
+        border-radius: 0px;
+    }
+    div#search-history {
+        margin-left: 20px;
+    }
+    form#search-container {
+        padding-left: 20px!important;
+    }
+    div#forecast-container {
+        width: 100%;
+    }
+    .col-12.col-md-3.p-2.search-column {
+        padding-right: 0px!important;
+    }
+    .forecast-temp {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1000px) {
+    input#city-input {
+        width: 100%;
+    }
+}
