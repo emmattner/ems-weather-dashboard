@@ -25,6 +25,24 @@ const formSumbitHandler = function (event) {
     pastCity(city);
 }
 
-const saveCity = function(){
+const saveCity = function () {
     localStorage.setItem("cityArray", JSON.stringify(cityArray));
+};
+
+const getCityWeather = function (city) {
+    const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_Key}`
+    fetch(apiURL)
+        .then(function (response) {
+            if (response.ok) {
+                console.log(response);
+                response.json().then(function (data) {
+                    displayWeather(data, city);
+                });
+            } else {
+                alert('Uh oh!: ' + response.statusText);
+            }
+        })
+        .catch(function (error) {
+            alert('Unable to connect to OpenWeather');
+        });
 };
