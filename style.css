@@ -28,3 +28,10 @@ h1 {
     font-size: 26px;
     padding: 10px;
 }
+
+/* Search and History */
+
+form#search-container {
+    background: #f9fafb;
+    padding: 20px!important;
+}
