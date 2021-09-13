@@ -167,3 +167,9 @@ span.favorable {
 div#forecast-container {
     margin-left: -10px;
 }
+
+/* Border Bootstrap Overide */
+
+div#five-day-forecast, span.list-group-item, div#search-history, div#current-forecast, .list-group-item {
+    border: none!important;
+}
