@@ -10,7 +10,7 @@
 
 
 ## Description
-Here I have created a Weather Dashboard that allows the user to search for any city in the world and find out the current weather including the temperature, wind speed, humidity and UV Index. As well as displaying a following five day forecast including the temperature and humidity. I ended up getting a tutor to help me with this one as I struggled a little bit. 
+Here I have created a Weather Dashboard that allows the user to search for any city in the world and find out the current weather including the temperature, wind speed, humidity and UV Index. As well as displaying a following five day forecast including the temperature and humidity. I ended up getting a tutor to help me with this one as I struggled a little bit. I'm very happy with the outcome and I learnt a lot as well!
 
 ## Application ScreenShots
 ![weather-dash2](https://user-images.githubusercontent.com/78684306/133022242-e86e1d1d-91c7-483f-b521-26debb39a147.png)
