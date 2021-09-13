@@ -51,4 +51,9 @@ const displayWeather = function (weather, searchCity) {
     currentWeatherEl.textContent = "";
     citySearchInputEl.textContent = searchCity;
 
+    const currentDate = document.createElement("div")
+    currentDate.setAttribute("class", "current-date")
+    currentDate.textContent = moment(weather.dt.value).format("dddd, MMMM Do, YYYY");
+    citySearchInputEl.appendChild(currentDate);
+
 }    
