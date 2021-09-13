@@ -12,6 +12,7 @@ main.container-main {
 }
 
 /* Header */
+
 #headshot {
     background: rgb(193, 245, 255);
     background: -webkit-linear-gradient(53deg, rgba(193, 245, 255, 1) 0%, rgba(0, 215, 255, 1) 16%, rgba(0, 171, 255, 1) 58%, rgba(0, 60, 117, 1) 100%);
@@ -20,4 +21,10 @@ main.container-main {
     ;
     color: white;
     padding: 10px!important;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 10px;
 }
