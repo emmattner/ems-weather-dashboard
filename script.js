@@ -125,6 +125,12 @@ const displayForecasts = function (weather) {
         const dailyForecast = forecast[i];
         const forecastEl = document.createElement("div");
         forecastEl.classList = "card bg-white text-black m-2";
-    }    
 
+        const forecastDate = document.createElement("h5")
+        forecastDate.textContent = moment.unix(dailyForecast.dt).format("dddd Do MMM");
+        forecastDate.classList = "card-header text-center"
+        forecastEl.appendChild(forecastDate);
+
+
+    }
 }    
