@@ -136,10 +136,19 @@ const displayForecasts = function (weather) {
         forecastTempEl.textContent = Math.round(dailyForecast.main.temp) + "°C";
         forecastEl.appendChild(forecastTempEl);
 
-        const forecastHumEl=document.createElement("span");
+        const forecastHumEl = document.createElement("span");
         forecastHumEl.classList = "card-body text-center forecast-humdity";
         forecastHumEl.textContent = dailyForecast.main.humidity + "  % Humidity";
         forecastEl.appendChild(forecastHumEl);
         forecastContainerEl.appendChild(forecastEl);
     }
-}    
+}
+
+const pastCity = function (pastCity) {
+    pastCityEl = document.createElement("button");
+    pastCityEl.textContent = pastCity;
+    pastCityEl.classList = "d-flex btn-light border p-2";
+    pastCityEl.setAttribute("data-city", pastCity)
+    pastCityEl.setAttribute("type", "submit");
+    cityHistoryEl.prepend(pastCityEl);
+}
