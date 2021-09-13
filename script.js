@@ -46,3 +46,9 @@ const getCityWeather = function (city) {
             alert('Unable to connect to OpenWeather');
         });
 };
+
+const displayWeather = function (weather, searchCity) {
+    currentWeatherEl.textContent = "";
+    citySearchInputEl.textContent = searchCity;
+
+}    
