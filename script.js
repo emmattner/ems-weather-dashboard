@@ -131,6 +131,11 @@ const displayForecasts = function (weather) {
         forecastDate.classList = "card-header text-center"
         forecastEl.appendChild(forecastDate);
 
+        const forecastTempEl = document.createElement("span");
+        forecastTempEl.classList = "card-body text-center forecast-temp";
+        forecastTempEl.textContent = Math.round(dailyForecast.main.temp) + "°C";
+        forecastEl.appendChild(forecastTempEl);
+
 
     }
 }    
