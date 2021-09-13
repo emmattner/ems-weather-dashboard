@@ -60,4 +60,10 @@ const displayWeather = function (weather, searchCity) {
     temperatureEl.textContent = Math.round(weather.main.temp) + "°C";
     temperatureEl.classList = "list-group-item current-temp"
     currentWeatherEl.appendChild(temperatureEl);
+
+    const windSpeedEl = document.createElement("span");
+    windSpeedEl.textContent = "Wind Speed: " + weather.wind.speed + " meters/sec";
+    windSpeedEl.classList = "list-group-item"
+    currentWeatherEl.appendChild(windSpeedEl);
+
 }    
