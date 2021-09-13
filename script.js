@@ -66,4 +66,11 @@ const displayWeather = function (weather, searchCity) {
     windSpeedEl.classList = "list-group-item"
     currentWeatherEl.appendChild(windSpeedEl);
 
-}    
+    const humidityEl = document.createElement("span");
+    humidityEl.textContent = "Humidity: " + weather.main.humidity + " %";
+    humidityEl.classList = "list-group-item"
+    currentWeatherEl.appendChild(humidityEl);   
+    const lat = weather.coord.lat;
+    const lon = weather.coord.lon;
+    getUvIndex(lat,lon)
+}
